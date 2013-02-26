@@ -1,0 +1,379 @@
+/*
+Theme Name: GeekHub
+Author: Alexandr Tsibulko
+*/
+
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px arial; color:#4B7589; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,fieldset,td,tr,form,label,select,checkbox,input,textarea {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style:none;
+
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px myriad pro; color:#000; text-decoration:none; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+.line {
+    border-bottom: 1px solid #8EA8B3;
+}
+body {
+    background:#fff url(images/header_bg.png) left -342px repeat-x;
+}
+body.home {
+    background:#fff url(images/header_bg.png) left top repeat-x;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.wrapper {
+    overflow: hidden;
+    width: 900px;
+    margin: 0 auto;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.header {
+    height: 108px;
+    overflow: hidden;
+}
+.home .header {
+    background: url(images/header_buble_bg.png) center bottom no-repeat;
+    height: 450px;
+}
+
+.header h1 {
+    margin-top: 19px;
+    float: left;
+    width: 167px;
+    height: 71px;
+}
+.header h1 img {
+    display: block;
+}
+.header ul.nav {
+    float: right;
+    margin-top: 47px;
+}
+.header ul.nav li {
+    float: left;
+    margin-left: 22px;
+}
+.header ul.nav li a {
+    color: #396375;
+    font-size: 15px;
+    font-family: Myriad Pro;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    height: 61px;
+}
+.header ul.nav li.current-menu-item a,
+.header ul.nav li a:hover {
+    color: #E11D5C;
+
+}
+.header ul.nav li.current-menu-item a {
+    background: url(images/inner_active.png) center bottom no-repeat;
+}
+.header ul.nav li.menu-item-15 a {
+    background: none;
+}
+.header ul.social {
+    overflow: hidden;
+    margin-top: 45px;
+    padding-left: 93px;
+    margin-bottom: 40px;
+}
+.header ul.social li {
+    float: left;
+    margin-right: 9px;
+}
+.header ul.social li a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(images/icons_social.png) left center no-repeat;
+}
+.header ul.social li.vk  a {
+    background-position: -32px;
+}
+.header ul.social li.t  a {
+    background-position: -64px;
+}
+.header ul.social li.yt  a {
+    background-position: -96px;
+}
+.header ul.social li.v  a {
+    background-position: -128px;
+}
+
+.header ul.social li  a:hover {
+    background-image: url(images/social_hover.png);
+}
+
+.header h2 {
+    padding-top: 78px;
+    text-align: center;
+    font-size: 53px;
+    color: #246987;
+    font-family: Trebuchet MS;
+    font-weight: normal;
+}
+.header a.registr {
+    display: block;
+    width: 323px;
+    height: 82px;
+    background: url(images/registr_bg.png) center center no-repeat;
+    color: #fff;
+    font-size: 26px;
+    font-family: Trebuchet MS;
+    line-height: 82px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.content .ogoloshennya {
+    margin: 37px 48px 24px 62px;
+    font-size: 15.28px;
+    line-height: 23px;
+}
+.content p a {
+    color: #E11D5D;
+    font-size: 15.28px;
+}
+.content h2 {
+    text-align: center;
+    padding-bottom: 7px;
+    font: 20px Trebuchet MS;
+    color: #437183;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #A7C3CF;
+    margin-bottom: 25px;
+}
+.content ul.courses {
+    overflow: hidden;
+}
+.content ul.courses li{
+    float: left;
+    width: 450px;
+    padding-bottom: 20px;
+
+}
+.content ul.courses li img {
+    display: block;
+    float: left;
+    margin-right: 25px;
+}
+.content ul.courses li div {
+    overflow: hidden;
+}
+.content ul.courses li div.left {
+    overflow: hidden;
+    padding-right: 45px;
+}
+.content ul.courses li h3 {
+    color: #E92777;
+    font: 28px trebuchet ms;
+    padding-bottom: 9px;
+}
+.content ul.courses li p {
+    font-size: 12.5px;
+    line-height: 18px;
+}
+.content ul.social-share {
+    overflow: hidden;
+    padding: 58px 0 59px;
+}
+.content ul.social-share li {
+    float: left;
+}
+.content ul.social-share li.certificates {
+    margin: 0 35px 0 35px;
+}
+.content ul.social-share li.certificates a {
+    display: block;
+    width: 276px;
+    height: 214px;
+    background: url(images/banner.png) left top no-repeat;
+    margin-top: -18px;
+}
+.content ul.social-share li h4 {
+    color: #437183;
+    font: 17px Trebuchet MS;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #A7C3CF;
+}
+.content ul.social-share li ul.sponsors {
+    overflow: hidden;
+}
+.content ul.social-share li ul.sponsors li {
+    float: left;
+    padding: 0 10px 14px;
+}
+.content ul.social-share li ul.sponsors li a {
+    display: block;
+    width: 72px;
+    height: 54px;
+    background: url(images/sponsors.png) left top no-repeat;
+}
+.content ul.social-share li ul.sponsors li.next {
+    clear: both;
+    margin-left: 50px;
+}
+
+.content ul.social-share li ul.sponsors li.de a {
+    background-position: 0 -76px;
+}
+.content ul.social-share li ul.sponsors li.de a:hover {
+    background-position: 0 0;
+}
+
+.content ul.social-share li ul.sponsors li.moc a {
+    background-position: -101px -76px;
+}
+.content ul.social-share li ul.sponsors li.moc a:hover {
+    background-position: -101px 0;
+}
+
+.content ul.social-share li ul.sponsors li.s a {
+    background-position: -196px -76px;
+}
+.content ul.social-share li ul.sponsors li.s a:hover {
+    background-position: -196px 0;
+}
+
+.content ul.social-share li ul.sponsors li.next a {
+    background-position: -280px -76px;
+}
+.content ul.social-share li ul.sponsors li.next a:hover {
+    background-position: -280px 0;
+}
+
+.content ul.social-share li ul.sponsors li.y a {
+    background-position: -380px -76px;
+}
+.content ul.social-share li ul.sponsors li.y a:hover {
+    background-position: -380px 0;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.footer {
+    overflow: hidden;
+    padding-top: 16px;
+    padding-bottom: 80px;
+    border-top: 1px solid #A7C3CF
+}
+.footer span {
+    float: right;
+    color: #A7C3CF;
+    font-size: 11px;
+}
+.footer ul {
+    overflow: hidden;
+}
+.footer ul li {
+    float: left;
+    margin-right: 20px;
+}
+.footer ul li a {
+    font: 11px Arial;
+    color: #396375;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer ul li.current-menu-item a,
+.footer ul li a:hover {
+    color: #F85B4E;
+}
+
+
+/************************************/
+.content h1 {
+    border-bottom: 1px solid #A7C3CF;
+    font-family: "Trebuchet MS";
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 50px;
+    margin: 0 0 27px;
+    padding: 28px 0 8px;
+}
+.content .page-text img {
+    display: block;
+    float: left;
+    margin-left: 35px;
+}
+.content .page-text {
+    overflow: hidden;
+
+}
+.content .page-text p {
+    color: #4C7689;
+    font-weight: normal;
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px;
+}
+.content .page-text p  a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #E11D5D;
+    font-weight: bold;
+    font-family: Arial;
+}
+.content .page-text p  a:hover {
+    text-decoration: underline;
+}
+.content .text {
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin-left: 35px;
+}
