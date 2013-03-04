@@ -20,13 +20,18 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?79"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/ie-odd.js"></script>
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div class="wrapper">
     <div class="header">
-        <h1><a href="/"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="geekhub"/></a></h1>
+        <?php if ( is_home() ) { ?>
+            <h1 class="logo"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="geekhub"/></a></h1>
+        <?php } else { ?>
+            <div class="logo"><a href="/"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="geekhub"/></a></div>
+        <?php } ?>
 
         <?php
             wp_nav_menu(
@@ -38,8 +43,6 @@
                 )
             )
         ;?>
-
-       <?php if ( ! dynamic_sidebar( 'header-widget-area' ) ) : endif; ?>
 
         <ul class="social" >
             <li class="f"><a href="#"></a></li>

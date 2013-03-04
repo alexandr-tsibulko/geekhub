@@ -1,7 +1,7 @@
 
     <div class="footer">
 
-        <span>&copy; Copyright <?php the_date('Y');?></span>
+        <span>&copy; Copyright <?php echo date('Y');?></span>
 
         <?php
         wp_nav_menu(

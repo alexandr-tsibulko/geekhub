@@ -3,7 +3,7 @@
 <head>
 	<title>{#emotions_dlg.title}</title>
     <?php
-	include ('../jwl_call_wp_load.php');
+	include ('../../includes/tinymce_addon_scripts.php');
 	?>
     <!--
 	<script type="text/javascript" src="../../tinymce/tiny_mce_popup.js"></script>

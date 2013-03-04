@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support( 'post-thumbnails' );
+
 	register_sidebar( array(
 		'name' => __( 'Header Widget Area' ),
 		'id' => 'header-widget-area',

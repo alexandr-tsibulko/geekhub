@@ -59,6 +59,16 @@ body.home {
     width: 900px;
     margin: 0 auto;
 }
+.alignright {
+    float: right;
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+.alignleft {
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 10px;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -71,7 +81,8 @@ body.home {
     height: 450px;
 }
 
-.header h1 {
+.header h1.logo,
+.header .logo {
     margin-top: 19px;
     float: left;
     width: 167px;
@@ -105,7 +116,7 @@ body.home {
 .header ul.nav li.current-menu-item a {
     background: url(images/inner_active.png) center bottom no-repeat;
 }
-.header ul.nav li.menu-item-15 a {
+.home .header ul.nav li.current-menu-item a {
     background: none;
 }
 .header ul.social {
@@ -177,7 +188,7 @@ body.home {
     color: #E11D5D;
     font-size: 15.28px;
 }
-.content h2 {
+.content .courses-title {
     text-align: center;
     padding-bottom: 7px;
     font: 20px Trebuchet MS;
@@ -190,11 +201,13 @@ body.home {
 .content ul.courses {
     overflow: hidden;
 }
-.content ul.courses li{
+.content ul.courses li {
     float: left;
-    width: 450px;
-    padding-bottom: 20px;
-
+    margin: 0 0 20px;
+    width: 415px;
+}
+.content ul.courses li.left {
+    margin-right: 50px;
 }
 .content ul.courses li img {
     display: block;
@@ -203,10 +216,6 @@ body.home {
 }
 .content ul.courses li div {
     overflow: hidden;
-}
-.content ul.courses li div.left {
-    overflow: hidden;
-    padding-right: 45px;
 }
 .content ul.courses li h3 {
     color: #E92777;
@@ -219,7 +228,7 @@ body.home {
 }
 .content ul.social-share {
     overflow: hidden;
-    padding: 58px 0 59px;
+    padding: 58px 0 10px;
 }
 .content ul.social-share li {
     float: left;
@@ -344,14 +353,9 @@ body.home {
     margin: 0 0 27px;
     padding: 28px 0 8px;
 }
-.content .page-text img {
-    display: block;
-    float: left;
-    margin-left: 35px;
-}
 .content .page-text {
+    margin-bottom: 40px;
     overflow: hidden;
-
 }
 .content .page-text p {
     color: #4C7689;
@@ -377,3 +381,135 @@ body.home {
     float: left;
     margin-left: 35px;
 }
+.about-thumbnail {
+    float: left;
+    margin: 0 35px 0 30px;
+}
+.about-text {
+    overflow: hidden;
+}
+.content {
+    margin-bottom: 40px;
+}
+/**************************** TEAM *****************************/
+.category-content {
+    overflow: hidden;
+    padding: 0 40px;
+}
+.category-content li {
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.category-content li .entry-block {
+    float: left;
+    padding: 50px 0 0;
+    text-align: right;
+    width: 185px;
+}
+.category-content .entry-title {
+    color: #E92777;
+    font-family: Myriad Pro;
+    font-size: 28px;
+    font-weight: normal;
+}
+.category-content li div .entry-excerpt {
+    color: #F2753D;
+    font-family: arial;
+    font-size: 12px;
+}
+.category-content .entry-thumbnail {
+    display: block;
+    float: left;
+    margin: 0 20px;
+}
+.category-content .entry-text {
+    overflow: hidden;
+    padding-top: 40px;
+    font: 15px arial;
+    line-height: 20px;
+}
+.category-content .entry-text a {
+    font: 15px arial;
+    color: #E11D5D;
+}
+.category-content .entry-text a:hover {
+    text-decoration: underline;
+}
+.category-content li.right .entry-block {
+    float: right;
+    text-align: left;
+}
+.category-content li.right .entry-thumbnail {
+    float: right;
+}
+.category-content li.right .entry-text {
+    text-align: right;
+}
+/***************************************************************/
+
+
+/************************** CONTACTS ***************************/
+.content dl {
+    overflow: hidden;
+    padding: 0 35px;
+    text-align: center;
+}
+.content dt h2 {
+    color: #EB3580;
+    font-size: 27px;
+    font-weight: normal;
+    padding: 0 0 12px;
+    text-align: center;
+}
+.content dt.map {
+    width: 381px;
+}
+.content dd.map {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 415px;
+    height: 321px;
+    background: url("images/map.png") left top no-repeat;
+}
+.content dd.map iframe {
+    position: absolute;
+    top: 16px;
+    left: 17px;
+}
+.content dd {
+    padding-bottom: 30px;
+    color: #4B7589;
+    font-size: 33px;
+    font-family: Trebuchet MS;
+}
+.content dl dd ul {
+    overflow: hidden;
+    padding-left: 116px;
+}
+.content dl dd ul  li {
+    float: left;
+    margin-right: 18px;
+}
+.content dl dd ul li a {
+    display: block;
+    width: 49px;
+    height: 49px;
+    background: url(images/contact_links.png) left top no-repeat;
+}
+.content dl dd ul li.vk a {
+    background-position: -65px 0;
+}
+.content dl dd ul li.t a {
+    background-position: -132px 0;
+}
+.content dl dd ul li.f a:hover {
+    background-position: 0 -57px;
+}
+.content dl dd ul li.vk a:hover {
+    background-position: -65px -57px;
+}
+.content dl dd ul li.t a:hover {
+    background-position: -132px -57px;
+}
+/***************************************************************/

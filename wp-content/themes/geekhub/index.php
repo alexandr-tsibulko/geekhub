@@ -9,27 +9,28 @@ get_header(); ?>
                 query_posts('pagename=ogoloshennya');
                 if (have_posts()) : the_post();
             ?>
-
             <div class="ogoloshennya">
             <?php
                  //Якщо відповідь не пуста, то виводити вміст контент сторінки
                  the_content();
             ?>
             </div>
-
             <?php endif; wp_reset_query(); ?>
 
 
-            <?php
-                //Запит в базу з урлом сторінки nashi-kursi
-                query_posts('pagename=nashi-kursi');
-                if (have_posts()) : the_post();
-            ?>
-                <div>
-                    <h2><?php the_title(); ?></h2>
-                    <?php the_content(); ?>
-                </div>
-            <?php endif; wp_reset_query(); ?>
+            <?php query_posts('category_name=nashi-kursi&orderby=date&order=ASC'); ?>
+            <h2 class="courses-title"><?php single_cat_title(); ?></h2>
+            <ul class="courses">
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <li>
+                    <?php echo get_the_post_thumbnail( $id, array(125,123), array( 'class' => 'kurs-thumbnail' ) ); ?>
+                    <div class="kurs-info">
+                        <h3><?php the_title(); ?></h3>
+                        <?php the_content(); ?>
+                    </div>
+                </li>
+            <?php endwhile; endif; wp_reset_query(); ?>
+            </ul>
 
 
             <ul class="social-share">

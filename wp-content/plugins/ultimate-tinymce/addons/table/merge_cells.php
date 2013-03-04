@@ -3,7 +3,7 @@
 <head>
 	<title>{#table_dlg.merge_cells_title}</title>
 	<?php
-	include ('../jwl_call_wp_load.php');
+	include ('../../includes/tinymce_addon_scripts.php');
 	?>
     <!--
 	<script type="text/javascript" src="../../tinymce/tiny_mce_popup.js"></script>
@@ -13,7 +13,7 @@
 	<script type="text/javascript" src="js/merge_cells.js"></script>
 </head>
 <body style="margin: 8px" role="application">
-<form onsubmit="MergeCellsDialog.merge();return false;" action="#">
+<form onSubmit="MergeCellsDialog.merge();return false;" action="#">
 	<fieldset>
 		<legend>{#table_dlg.merge_cells_title}</legend>
 		<table role="presentation" border="0" cellpadding="0" cellspacing="3" width="100%">
@@ -30,7 +30,7 @@
 
 	<div class="mceActionPanel">
 		<input type="submit" id="insert" name="insert" value="{#update}" />
-		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		<input type="button" id="cancel" name="cancel" value="{#cancel}" onClick="tinyMCEPopup.close();" />
 	</div>
 </form>
 </body>
